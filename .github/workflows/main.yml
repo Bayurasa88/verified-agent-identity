@@ -4,13 +4,13 @@ on:
   workflow_dispatch:
     inputs:
       agent_name:
-        description: 'Hevanfi'
+        description: 'munera'
         required: true
-        default: 'Hevanfi'
+        default: 'munera'
       agent_description:
-        description: 'Hevanfi'
+        description: 'munera'
         required: true
-        default: 'Hevanfi AI Agent'
+        default: 'munera AI Agent'
 
 jobs:
   verify:
@@ -38,4 +38,4 @@ jobs:
 
       - name: Step 3 - Link Human to Agent
         run: |
-          node scripts/manualLinkHumanToAgent.js --challenge '{"name": "Hevanfi", "description": "Hevanfi AI Agent"}'
+          node scripts/manualLinkHumanToAgent.js --challenge '{"name": "munera", "description": "munera AI Agent"}'
